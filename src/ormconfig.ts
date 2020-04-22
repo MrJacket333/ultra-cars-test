@@ -8,7 +8,7 @@ const config: ConnectionOptions = {
   password: process.env.POSTGRES_PASSWORD || "postgres",
   database: process.env.POSTGRES_DB || "UltraCars",
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
-  synchronize: true,
+  synchronize: false,
   migrationsRun: true,
   logging: true,
   logger: 'file',

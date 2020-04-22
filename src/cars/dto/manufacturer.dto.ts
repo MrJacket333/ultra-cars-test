@@ -1,18 +1,6 @@
-import { IsNotEmpty, IsPhoneNumber } from 'class-validator';
-
-export class ManufacturerDto {
-  
-  @IsNotEmpty()
+export class ManufacturerDto {  
   id: number;
-
-  @IsNotEmpty()
   name: string;
-
-  @IsNotEmpty()
-  @IsPhoneNumber("any")
   phone: string;
-
-  @IsNotEmpty()
-  siret: number;
-  
+  siret: number;  
 }
