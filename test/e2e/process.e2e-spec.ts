@@ -29,8 +29,7 @@ describe('ProcessController (e2e)', () => {
           username: process.env.POSTGRES_USER || "root",
           password: process.env.POSTGRES_PASSWORD || "postgres",
           database: 'UltraCarsE2ETest',
-          entities: ['./**/*.entity.ts'],
-          synchronize: false,
+          entities: ['./**/*.entity.ts']
         }),
       ],
     }).compile();
